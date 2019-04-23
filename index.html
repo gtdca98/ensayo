@@ -5,9 +5,10 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $.get("demo_test.asp", function(data, status){
-      alert("Data: " + data + "\nStatus: " + status);
-    });
+   // $.get("demo_test.asp", function(data, status){
+   //   alert("Data: " + data + "\nStatus: " + status);
+   // });
+    alert($.get("https://sheets.googleapis.com/v4/spreadsheets/12R0NxVBve4JtXdGQD0N1h4ZZ4RQFwsiH6nPrOH8nhS8\?includeGridData\=true\&fields\=sheets%2Fdata%2FrowData%2Fvalues%2FeffectiveValue\&key\=\{AIzaSyAoW2g-Xf1WqZS5P-0sjb_x9U1zGJeCwQ8\}"))
   });
 });
 </script>
